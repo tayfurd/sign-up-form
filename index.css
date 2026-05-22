@@ -1,0 +1,146 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*:not(dialog) {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Verdana", "Trebuchet MS", "Arial", sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('./font/raleway-semibold-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.left-side {
+  position: relative;
+  width: 800px;
+  flex-shrink: 1;
+}
+
+.leaves {
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    object-fit: cover;
+}
+
+.logo-container {
+  position: absolute;
+  width: 100%;
+  background-color:  #00000050;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 125px;
+  left: -10px;
+}
+
+.logo-text {
+  font-family: "ralewaysemibold";
+  font-size: 6em;
+  color: #ffffff;
+  align-self: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+}
+
+.right-side, fieldset {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  gap: 25px;
+}
+
+fieldset > div {
+  display: flex;
+  gap: 75px;
+}
+
+fieldset > div > div {
+  flex-direction: column;
+}
+
+fieldset {
+  display: flex
+}
+
+.padding-adj {
+  padding: 25px 50px;
+}
+
+input {
+  height: 2.4em;
+  width: 17em;
+  padding: 0.75em;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+.call-to-action {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  color: rgb(51, 51, 51);
+}
+
+
+fieldset {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  border: none;
+}
+
+.btn {
+  background-color: #596D48;
+  color: white;
+  padding: 15px 60px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+button:hover {
+  background-color: #657a52;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color:  #596D48;
+  font-weight: bold;
+}
