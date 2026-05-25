@@ -91,7 +91,8 @@ fieldset > div > div {
 }
 
 fieldset {
-  display: flex
+  display: flex;
+  box-shadow: 1px 1px 15px 1px rgb(204, 204, 204);
 }
 
 .padding-adj {
@@ -135,7 +136,7 @@ fieldset {
 }
 
 button:hover {
-  background-color: #657a52;
+  background-color: #687c54;
   cursor: pointer;
 }
 
@@ -143,4 +144,12 @@ a {
   text-decoration: none;
   color:  #596D48;
   font-weight: bold;
+}
+
+input:user-valid {
+  border-color: rgb(153, 197, 255);
+}
+
+input:user-invalid {
+  border-color: rgb(255, 90, 90);
 }
